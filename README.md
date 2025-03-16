@@ -40,6 +40,7 @@ on abstractions. This helps in decoupling the code and makes it more maintainabl
 EX:- a Mouse and a Keyboard should not depend on a computer. If we use a wireless Keyboard or Mouse then
 we have to change the computer. therefore we need to use interfaces to do theses. 
 
+https://www.youtube.com/watch?v=kF7rQmSRlq0
 
 **CUPID principles**
 
