@@ -99,5 +99,3 @@ The **CUPID principles** were introduced by **Dan North** as a modern alternativ
 - Helps write **clear, reusable, and maintainable** code.  
 
 CUPID is not about replacing SOLID but offering a more **developer-friendly** approach to software design, focusing on **joy** and **practicality** rather than strict adherence to rules.
-
-Would you like some **real-world examples** of implementing CUPID in Java, Python, or any other language you use? 😊
