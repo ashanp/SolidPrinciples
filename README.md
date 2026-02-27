@@ -34,11 +34,20 @@ implementation in package ISP
 
 D - Dependency Inversion Principle (DIP) 
 ----------------------------------------
-It states that high-level modules should not depend (tightly coupled) on low-level modules; both should 
-depend on abstractions. Additionally, abstractions should not depend on details; details should depend 
-on abstractions. This helps in decoupling the code and makes it more maintainable and flexible.
-EX:- a Mouse and a Keyboard should not depend on a computer. If we use a wireless Keyboard or Mouse then
-we have to change the computer. therefore we need to use interfaces to do theses. 
+High-level modules should not depend on low-level modules.
+Both should depend on abstractions.
+Abstractions should not depend on details.
+Details should depend on abstractions.
+
+Instead of this:
+OrderService → MySQLDatabase
+You design:
+OrderService → Database (interface)
+MySQLDatabase → implements Database
+
+Now the high-level business logic depends on an interface, not a concrete class.
+That is Dependency Inversion.
+It inverts the traditional dependency direction.
 
 https://www.youtube.com/watch?v=kF7rQmSRlq0
 
@@ -99,3 +108,4 @@ The **CUPID principles** were introduced by **Dan North** as a modern alternativ
 - Helps write **clear, reusable, and maintainable** code.  
 
 CUPID is not about replacing SOLID but offering a more **developer-friendly** approach to software design, focusing on **joy** and **practicality** rather than strict adherence to rules.
+
