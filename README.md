@@ -37,17 +37,17 @@ D - Dependency Inversion Principle (DIP)
 High-level modules should not depend on low-level modules.
 Both should depend on abstractions.
 Abstractions should not depend on details.
-Details should depend on abstractions.
+Details should depend on abstractions. <br>
 
-Instead of this:
-OrderService → MySQLDatabase
-You design:
-OrderService → Database (interface)
-MySQLDatabase → implements Database
+Instead of this:<br>
+OrderService → MySQLDatabase<br>
+You design:<br>
+OrderService → Database (interface)<br>
+MySQLDatabase → implements Database<br>
 
-Now the high-level business logic depends on an interface, not a concrete class.
-That is Dependency Inversion.
-It inverts the traditional dependency direction.
+Now the high-level business logic depends on an interface, not a concrete class.<br>
+That is Dependency Inversion.<br>
+It inverts the traditional dependency direction.<br>
 
 https://www.youtube.com/watch?v=kF7rQmSRlq0
 
@@ -108,4 +108,5 @@ The **CUPID principles** were introduced by **Dan North** as a modern alternativ
 - Helps write **clear, reusable, and maintainable** code.  
 
 CUPID is not about replacing SOLID but offering a more **developer-friendly** approach to software design, focusing on **joy** and **practicality** rather than strict adherence to rules.
+
 
