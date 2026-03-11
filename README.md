@@ -30,7 +30,9 @@ I - Interface Segregation Principle (ISP)
 ----------------------------------------
 No client should be forced to depend on a interface where it is not used. Instead, what is needed is to
 split the interface into smaller more specific interfaces that client only needs. Please check the correct 
-implementation in package ISP
+implementation in package ISP. (take a example where a java interface class have about 100 abstract methods.
+We have to implement all the 100 just to use one. this is the problem. insted, if one can segregate the interface
+on some logic i.e:- functionality, then we only have to implement a limited number of abstract methods)
 
 D - Dependency Inversion Principle (DIP) 
 ----------------------------------------
@@ -108,5 +110,6 @@ The **CUPID principles** were introduced by **Dan North** as a modern alternativ
 - Helps write **clear, reusable, and maintainable** code.  
 
 CUPID is not about replacing SOLID but offering a more **developer-friendly** approach to software design, focusing on **joy** and **practicality** rather than strict adherence to rules.
+
 
 
